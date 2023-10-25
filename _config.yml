@@ -37,6 +37,12 @@ sass:
 social:
   type: Organization
 
+google_maps:
+  js_api_key: AIzaSyAd4uvSuZoZOc-AXR6RuK_PEchAJyYsy0Y
+
+formspree:
+  form_endpoint: https://formspree.io/f/xvojlbrw
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

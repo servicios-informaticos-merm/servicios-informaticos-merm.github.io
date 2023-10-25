@@ -2,7 +2,7 @@
   <!-- Google Map Embed -->
   <div class="google-map">
 
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDbnxVZQannH0GF4gtnnBFPiP9ofm2WqGs"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps.js_api_key }}"></script>
     <div style='overflow:hidden;height:490px;width:100%;'>
       <div id='gmap_canvas' style='height:490px;width:100%;'></div>
     </div>
@@ -20,7 +20,7 @@
           position: new google.maps.LatLng(44.4267674, 26.102538399999958)
         });
         infowindow = new google.maps.InfoWindow({
-          content: '<span><strong>Sera Google Map</strong><br>Bucharest, Romania<br><span>'
+          content: '<span><strong>{{site.title}}</strong><br>Bucharest, Romania<br><span>'
         });
         google.maps.event.addListener(marker, 'click', function() {
           infowindow.open(map, marker);
